@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/goal_today_task"
+    tools:context=".Tasks">
+
+    <Button
+        android:id="@+id/SettingsXML"
+        android:layout_width="86dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/round_button_grey"
+        android:text="SETTINGS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/progressXML"
+        android:layout_width="86dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_button_orange"
+        android:text="PROGRESS"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="PROGRESS" />
+
+    <Button
+        android:id="@+id/todayXML"
+        android:layout_width="86dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/round_button_purple"
+        android:text="TODAY"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="TODAY" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="123dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="88dp"
+        android:text="TASKS"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Recyclerview
+        android:id= "@id/recyclerview"
+        android:layout_width="281dp"
+        android:layout_height="402dp"
+        app:layout_constraintBottom_toTopOf="@+id/progressXML"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.275"
+        android:padding="4dp"
+        android:scrollbar ="vertical"
+        android:background ="#ACA5A5"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
