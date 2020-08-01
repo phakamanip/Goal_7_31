@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="397dp"
+        android:layout_height="70dp"
+        android:layout_margin="4dp">
+
+        <ImageButton
+            android:id="@+id/editBtn_xml"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintEnd_toStartOf="@+id/tastTv_xml"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doneBtn_xml"
+            app:srcCompat="@android:drawable/btn_dialog" />
+
+        <ImageButton
+            android:id="@+id/doneBtn_xml"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/editBtn_xml"
+            app:layout_constraintEnd_toStartOf="@+id/tastTv_xml"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@android:drawable/checkbox_on_background" />
+
+        <TextView
+            android:id="@+id/tastTv_xml"
+            android:layout_width="321dp"
+            android:layout_height="30dp"
+
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:text="hahahahahhaha"
+                android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

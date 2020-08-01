@@ -61,19 +61,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Recyclerview
-        android:id= "@id/recyclerview"
-        android:layout_width="281dp"
-        android:layout_height="402dp"
-        app:layout_constraintBottom_toTopOf="@+id/progressXML"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recyclerview_xml"
+        android:layout_width="267dp"
+        android:layout_height="343dp"
+        android:background="@android:color/holo_purple"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.275"
-        android:padding="4dp"
-        android:scrollbar ="vertical"
-        android:background ="#ACA5A5"
+
+
         />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
